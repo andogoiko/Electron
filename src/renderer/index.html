@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmornin!</title>
+    <link rel="stylesheet" href="../assets/sass/main.sass">
+    <script src="https://cdn.jsdelivr.net/npm/filterous@2.0.2-beta/demo-browser/filterous2.min.js" integrity="sha256-vcDeFadK4HOhhuyaJKGpnrBNX2TLtNrCfrUyTaI+4ZE=" crossorigin="anonymous"></script>
+    <script type="module" src="frontend.js"></script>
+</head>
+<body>
+    <div class="window">
+        <div class="window-content">
+          <div class="pane-group">
+            <div class="pane-sm sidebar">
+              <ul class="list-group">
+                <li class="list-group-header">
+                  <input id="search-box" class="form-control" type="text" placeholder="Buscar una imagen">
+                </li>
+                <li class="list-group-item selected">
+                  <img class="media-object pull-left" src="../assets/img/avatar.jpg" height="32">
+                  <div class="media-body">
+                    <strong>1.jpg</strong>
+                    <p>1 MB</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <img class="media-object pull-left" src="../assets/img/avatar2.jpg" height="32">
+                  <div class="media-body">
+                    <strong>2.jpg</strong>
+                    <p>1 MB</p>
+                  </div>
+                </li>
+                ...
+              </ul>
+            </div>
+            <div class="pane">
+              <div class="image-view full-height">
+                <header class="toolbar toolbar-header image-toolbar">
+                  <div class="toolbar-actions">
+                    <div class="btn-group">
+                      <button id="open-directory" class="btn btn-default">
+                        <span class="icon icon-folder icon-text"></span>
+                        Abrir ubicación
+                      </button>
+                    </div>
+                    <div class="btn-group pull-right">
+                      <button id="download-image" class="btn btn-default">
+                        <span class="icon icon-download icon-text"></span>
+                        Guardar
+                      </button>
+                    </div>
+                    <div class="btn-group pull-right">
+                      <select id="filters" >
+                        <option value="normal" selected>Normal</option>
+                        <option value="clarendon">Clarendon</option>
+                        <option value="gingham">Gingham</option>
+                        <option value="moon">Moon</option>
+                        <option value="lark">Lark</option>
+                        <option value="reyes">Reyes</option>
+                        <option value="juno">Juno</option>
+                        <option value="slumber">Slumber</option>
+                        <option value="ludwig">Ludwig</option>
+                        <option value="aden">Aden</option>
+                        <option value="perpetua">Perpetua</option>
+                        <option value="amaro">Amaro</option>
+                        <option value="mayfair">Mayfair</option>
+                        <option value="rise">Rise</option>
+                        <option value="hudson">Hudson</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="xpro2">Xpro2</option>
+                        <option value="sierra">Sierra</option>
+                        <option value="willow">Willow</option>
+                        <option value="lofi">Lofi</option>
+                        <option value="inkwell">Sepia</option>
+                        <option value="hefe">Hefe</option>
+                        <option value="nashville">Nashville</option>
+                        <option value="stinson">Stinson</option>
+                        <option value="vesper">Vesper</option>
+                        <option value="earlybird">Earlybird</option>
+                        <option value="brannan">Brannan</option>
+                        <option value="sutro">Sutro</option>
+                        <option value="toaster">Toaster</option>
+                        <option value="walden">Walden</option>
+                        <option value="1977">1977</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="maven">Maven</option>
+                        <option value="ginza">Ginza</option>
+                        <option value="skyline">Skyline</option>
+                        <option value="dogpatch">Dogpatch</option>
+                        <option value="brooklyn">Brooklyn</option>
+                        <option value="helena">Helena</option>
+                        <option value="ashby">Ashby</option>
+                        <option value="charmes">Charmes</option>
+                      </select>
+                    </div>
+                    <label class="pull-right filter-label">Filtros: </label>
+                  </div>
+                </header>
+                <div class="image-container">
+                  <img id="image-displayed" src="../assets/img/avatar.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="toolbar toolbar-footer">
+          <div class="toolbar-actions">
+            <button class="btn btn-default">
+              Cancel
+            </button>
+        
+            <button class="btn btn-primary pull-right">
+              Save
+            </button>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
